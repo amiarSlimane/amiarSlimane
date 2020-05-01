@@ -4,6 +4,28 @@
  * Licensed under  (https://github.com/BlackrockDigital/my-portfolio/blob/master/LICENSE)
  */
 
+.list-inline-item {
+  vertical-align: middle;
+}
+
+.icon {
+  display: block;
+  width: 48px;
+  height: 72px;
+}
+
+.icon-mongodb {
+  background-color: #868e96;
+  -webkit-mask: url(../img/mongodb128.svg) no-repeat center;
+  mask: url(../img/mongodb128.svg) no-repeat center;
+}
+
+.icon-mongodb:hover {
+  background-color: #212529;
+  -webkit-mask: url(../img/mongodb128.svg) no-repeat center;
+  mask: url(../img/mongodb128.svg) no-repeat center;
+}
+
 body {
   font-family: 'Muli', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   padding-top: 54px;
