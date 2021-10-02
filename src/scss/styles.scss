@@ -1,0 +1,58 @@
+// 
+// Styles
+// 
+
+// Import variables
+@import "./variables.scss";
+
+// Import Bootstrap
+@import "bootstrap/scss/bootstrap.scss";
+
+// Global CSS
+@import "./global.scss";
+
+// Components
+@import "./components/sidenav.scss";
+@import "./components/icons.scss";
+
+// Sections
+@import "./sections/resume-section.scss";
+
+
+.icon {
+  display: block;
+  width: auto;
+  height: 42px;
+}
+
+.icon-mongodb {
+  width:50px;
+  background-color: #868e96;
+  -webkit-mask: url(../assets/img/mongodb.svg) no-repeat;
+  mask: url(../assets/img/mongodb.svg) no-repeat;
+}
+
+
+.icon-golang {
+  width:50px;
+  background-color: #868e96;
+  -webkit-mask: url(../assets/img/go.svg) no-repeat;
+  mask: url(../assets/img/go.svg) no-repeat;
+}
+
+
+.icon-grpc {
+  background-color: #868e96;
+  width:50px;
+  -webkit-mask: url(../assets/img/grpc.png) no-repeat;
+  mask: url(../assets/img/grpc.png) no-repeat;
+}
+
+
+
+.icon-rest {
+  width:100px;
+  background-color: #868e96;
+  -webkit-mask: url(../assets/img/rest.png) no-repeat;
+  mask: url(../assets/img/rest.png) no-repeat;
+}
