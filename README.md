@@ -6,3 +6,5 @@
 <a href="https://www.linkedin.com/in/slimane-amiar">LinkedIn</a>
 <a href="https://twitter.com/SlimaneAmiar">Twitter</a>
 <a href="https://talamit.com">Blog</a>
+
+<a href="[https://talamit.com](https://www.buymeacoffee.com/slimaneamiar)">Buymeacoffee</a>
