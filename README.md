@@ -7,4 +7,4 @@
 <a href="https://twitter.com/SlimaneAmiar">Twitter</a>
 <a href="https://talamit.com">Blog</a>
 
-<a href="[https://talamit.com](https://www.buymeacoffee.com/slimaneamiar)">Buymeacoffee</a>
+<a href="https://www.buymeacoffee.com/slimaneamiar">Buymeacoffee</a>
