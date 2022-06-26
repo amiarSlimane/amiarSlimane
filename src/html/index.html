@@ -5,75 +5,16 @@
   <title>Frontend Starter</title>
   <meta name="description" content="">
 
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  ${ require('./partials/head.html') }
 
-<!-- favicon.ico in the root directory -->
-<link rel="apple-touch-icon" href="favicon.ico">
-
-
-<script defer src="./js/index.bundle.js?e307482fecae520a45ab"></script><link href="./css/styles.css?e307482fecae520a45ab" rel="stylesheet"></head>
+</head>
 <body>
 
-<!--[if IE]>
-<div class="p-3 bg-light">
-  <div class="container">
-    <p class="mb-0 browserupgrade">
-      You are using an <strong>outdated</strong> browser.
-      Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.
-    </p>
-  </div>
-</div>
-<![endif]-->
-
+${ require('src/html/partials/browserupgrade.html') }
 
 <div class="d-flex flex-column h-100">
 
-  <header class="header">
-  <div class="container">
-    <nav class="navbar">
-      <a class="navbar-brand" href="#">
-        <img src="images/b8d44632a6611e703f53.svg" alt="brand">
-        <strong class="d-inline">Frontend Starter</strong>
-      </a>
-
-      <div>
-
-        <ul class="navbar-nav ml-auto flex-row">
-          <li class="nav-item mx-2">
-            <a href="https://sass-guidelin.es/#the-7-1-pattern" class="nav-link px-0">
-              Sass 7-1 Pattern
-              <svg class="mx-2" width="32" height="32" viewBox="0 0 24 24">
-                <path fill-rule="evenodd" clip-rule="evenodd" fill="currentColor"
-                      d="M12,24c6.627,0,12-5.373,12-12S18.627,0,12,0S0,5.373,0,12S5.373,24,12,24z M6.411,6.759c1.549-1.449,3.704-2.56,5.693-3.267c3.345-1.189,6.88-0.488,7.422,1.645L19.453,5.07c0.525,2.1-1.29,4.606-3.614,5.505c-2.07,0.809-3.796,0.675-4.5,0.45c-0.811-0.27-1.276-0.795-1.396-1.095c-0.045-0.12-0.12-0.315,0-0.375c0.075-0.046,0.105-0.031,0.314,0.194c0.196,0.211,0.961,0.78,2.431,0.615c3.855-0.434,6.164-3.42,5.431-5.024c-0.51-1.125-3.466-1.636-7.171,0.21c-4.515,2.25-4.77,4.109-4.8,4.814c-0.105,1.935,2.4,2.955,3.75,4.41c0.044,0.03,0.075,0.06,0.105,0.105c0.404-0.165,0.975-0.24,1.875-0.256c2.189-0.029,3.42,1.41,3.375,2.7c-0.045,1.021-0.976,1.441-1.141,1.471c-0.119,0.015-0.195,0.015-0.21-0.075c-0.014-0.061,0.031-0.09,0.181-0.181c0.151-0.09,0.584-0.405,0.674-0.944c0.091-0.54-0.329-1.86-2.43-2.1c-0.75-0.091-1.334-0.031-1.83,0.104c0.362,0.795,0.436,2.415-0.404,3.676c-0.87,1.289-2.49,2.085-4.065,1.649c-0.51-0.134-1.29-1.185-0.615-2.655c0.63-1.396,3.319-2.745,3.686-2.925v-0.006c-1.246-1.073-4.276-2.519-4.703-4.73C4.275,9.98,4.568,8.48,6.411,6.759z"/>
-                <path fill-rule="evenodd" clip-rule="evenodd" fill="currentColor"
-                      d="M6.803,19.761c0.418,0.242,1.392-0.046,2.09-0.805c0.229-0.25,0.415-0.52,0.555-0.81c0.026-0.056,0.054-0.115,0.078-0.176l0.065-0.18c0.18-0.544,0.199-1.147,0.024-1.792l-0.108,0.061v0.003c0,0-1.249,0.591-2.12,1.509C6.577,18.426,6.353,19.499,6.803,19.761z"/>
-              </svg>
-            </a>
-          </li>
-          <li class="nav-item mx-2">
-            <a href="https://getbootstrap.com/" class="nav-link px-0">
-              Bootstrap 5
-              <svg class="mx-2" width="40" height="32" viewBox="0 0 118 94" preserveAspectRatio="none">
-                <path fill-rule="evenodd" clip-rule="evenodd"
-                      d="M25 0c-7 0-12 6-12 12s0 14-2 21C9 39 6 43 0 44v6c6 1 9 5 11 11 2 7 2 15 2 21s5 12 12 12h69c6 0 11-6 11-12s0-14 2-21c2-6 5-10 11-11v-6c-6-1-9-5-11-11-2-7-2-15-2-21S100 0 94 0H25zm55 58c0 9-7 14-17 14H44a2 2 0 01-2-2V24a2 2 0 012-2h18c10 0 15 5 15 12 0 6-4 11-9 11v1c7 0 12 5 12 12zM61 28H50v15h9c7 0 11-2 11-7s-4-8-9-8zM50 49v17h11c7 0 11-3 11-9 0-5-4-8-12-8H50z"
-                      fill="currentColor"/>
-              </svg>
-            </a>
-          </li>
-          <li class="nav-item mx-2 d-flex align-items-center">
-            <div class="form-check form-switch">
-              <input class="form-check-input" type="checkbox" name="dark-mode-toggle" id="switch-dark-mode">
-              <label class="form-check-label" for="switch-dark-mode">
-                <i class="fa fa-moon-o"></i>
-              </label>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </nav>
-  </div>
-</header>
-
+  ${ require('src/html/partials/header.html') }
 
   <main class="d-flex h-100 align-items-center">
     <div class="container">
@@ -242,15 +183,7 @@
 
 
 
-  <footer class="footer">
-  <div class="container py-3">
-    <small>2021 &copy; Frontend Starter Boilerplate licensed under MIT for better web</small>
-    <a href="//github.com/smarteist/Frontent-Starter-Boilerplate/" class="mx-2">
-      <i class="fa fa-github"></i>
-    </a>
-  </div>
-</footer>
-
+  ${ require('./partials/footer.html') }
 
 </div>
 </body>

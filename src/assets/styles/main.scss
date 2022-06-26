@@ -1,0 +1,111 @@
+/*
+* 7-1 Sass Architecture
+* https:*sass-guidelin.es/#the-7-1-pattern
+* Essential Vendors
+* external libraries that should be loaded before
+*/
+@import '~sass-material-colors';
+@import '~normalize-scss';
+
+/*
+* Abstracts
+* - tools and helpers
+*/
+@import "abstracts/variables";
+@import "abstracts/functions";
+@import "abstracts/mixins";
+
+/*
+* Vendors
+* - CSS from external libraries and frameworks
+*/
+@import "vendors/fontawesome";
+@import "vendors/googlefonts";
+@import "vendors/bootstrap";
+
+/**
+* Base
+* - standard styles for commonly elements
+*/
+@import "base/base";
+@import "base/helpers";
+@import "base/fonts";
+@import "base/typography";
+
+/*
+* Components
+* - for small, reusable pieces
+*/
+@import "components/buttons";
+
+/*
+* Layout
+* - everything that takes part in laying out the site/application
+*/
+@import "layout/header";
+@import "layout/footer";
+
+/*
+* Pages
+* - page-specific styles
+*/
+@import "pages/home";
+
+/*
+* Themes
+* - for different aspects
+*/
+@import "themes/default";
+@import "themes/dark";
+
+@import "./variables";
+
+
+// Global CSS
+@import "./global";
+
+// Components
+@import "./components/sidenav";
+@import "./components/icons";
+
+// Sections
+@import "./sections/resume-section";
+
+
+.icon {
+  display: block;
+  width: auto;
+  height: 42px;
+}
+
+.icon-mongodb {
+  width:50px;
+  background-color: #868e96;
+  -webkit-mask: url(../images/mongodb.svg) no-repeat;
+  mask: url(../images/mongodb.svg) no-repeat;
+}
+
+
+.icon-golang {
+  width:50px;
+  background-color: #868e96;
+  -webkit-mask: url(../images/go.svg) no-repeat;
+  mask: url(../images/go.svg) no-repeat;
+}
+
+
+.icon-grpc {
+  background-color: #868e96;
+  width:50px;
+  -webkit-mask: url(../images/grpc.png) no-repeat;
+  mask: url(../images/grpc.png) no-repeat;
+}
+
+
+
+.icon-rest {
+  width:100px;
+  background-color: #868e96;
+  -webkit-mask: url(../images/rest.png) no-repeat;
+  mask: url(../images/rest.png) no-repeat;
+}
