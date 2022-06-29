@@ -1,6 +1,6 @@
-// 
+//
 // Colors
-// 
+//
 
 // Pre-state grayscale colors used in other variables
 
@@ -13,3 +13,9 @@ $orange: #bd5d38;
 // Override Bootstrap default state colors
 
 $primary: $orange;
+
+
+$theme-colors: (
+  "primary": #0074d9,
+  "success": rgb(25, 135, 84)
+);

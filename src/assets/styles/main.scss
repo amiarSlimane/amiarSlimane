@@ -4,6 +4,8 @@
 * Essential Vendors
 * external libraries that should be loaded before
 */
+@import "./variables";
+
 @import '~sass-material-colors';
 @import '~normalize-scss';
 
@@ -58,7 +60,7 @@
 @import "themes/default";
 @import "themes/dark";
 
-@import "./variables";
+
 
 
 // Global CSS

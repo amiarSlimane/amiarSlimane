@@ -17,6 +17,8 @@
             outline-color: lighten($primary, 15%);
         }
     }
+
+    background-color: rgb(25, 135, 84) !important;
 }
 
 @include media-breakpoint-up(lg) {
